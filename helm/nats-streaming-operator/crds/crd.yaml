@@ -5,7 +5,7 @@ metadata:
   name: natsstreamingclusters.streaming.nats.io
   annotations:
     "helm.sh/hook": "crd-install"
-    "helm.sh/": "before-hook-creation"
+    "helm.sh/hook-delete-policy": "before-hook-creation"
 spec:
   group: streaming.nats.io
   names:
